@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+     "module"       : "commonjs"  //
+    ,"target"       : "es5"       //  Possible values: "ES3" (default), "ES5", "ES6"/"ES2015", "ES2016", "ES2017" or "ESNext".
+    ,"pretty"       : true        //  Stylize errors and messages using color and context
+    ,"sourceMap"    : true
+    ,"inlineSources": false       //  Emit a single file with source maps instead of having a separate file
+    ,"declaration"  : false       //  Generates corresponding .d.ts file
+    ,"noEmit"       : false       //  Do not emit .js outputs
+  },
+   "files"    : ["./typings/index.d.ts"]
+  ,"include"  : ["./src/*"]
+//,"exclude"  : []                //  Default to: "node_modules", "bower_components", "jspm_packages" and <outDir>
+}
