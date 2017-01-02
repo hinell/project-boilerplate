@@ -1,14 +1,17 @@
 {
   "compilerOptions": {
-     "module"       : "commonjs"  //
-    ,"target"       : "es5"       //  Possible values: "ES3" (default), "ES5", "ES6"/"ES2015", "ES2016", "ES2017" or "ESNext".
-    ,"pretty"       : true        //  Stylize errors and messages using color and context
-    ,"sourceMap"    : true
-    ,"inlineSources": false       //  Emit a single file with source maps instead of having a separate file
-    ,"declaration"  : false       //  Generates corresponding .d.ts file
-    ,"noEmit"       : false       //  Do not emit .js outputs
-  },
-   "files"    : ["./typings/index.d.ts"]
+     "module"       : "commonjs"          //  "None", "CommonJS", "AMD", "System", "UMD", "ES6", or "ES2015".
+    ,"importHelpers": true                //  Import helper-function (e.g. __extends, __rest, etc..) from "tslib" (installed separately)
+    ,"target"       : "es5"               //  "ES3" (default), "ES5", "ES6"/"ES2015", "ES2016", "ES2017" or "ESNext".
+    ,"pretty"       : false               //  Stylize errors and messages using color and context
+    ,"sourceMap"    : false
+    ,"inlineSources": false               //  Emit a single file with source maps instead of having a separate file
+    ,"declaration"  : false               //  Generates corresponding .d.ts file
+    ,"noImplicitAny": false               //  Raise error on expressions and declarations with an implied any type.
+    ,"noEmit"       : false               //  Do not emit .js outputs
+    ,"noEmitOnError": true                //  Do not emit .js outputs
+  }
+  ,"files"    : ["./typings/index.d.ts"]  // Uncomment when using typings tool and typings/index.d.ts exists
   ,"include"  : ["./src/*"]
-//,"exclude"  : []                //  Default to: "node_modules", "bower_components", "jspm_packages" and <outDir>
+//,"exclude"  : []                        //  Default to: "node_modules", "bower_components", "jspm_packages" and <outDir>
 }
