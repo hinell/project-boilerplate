@@ -1,6 +1,8 @@
 # Here it is, huh?
-This is starting point for a new world. The whole new world...
+This is starting point for a new world.
+
 <br>Wait, what you're doing here?!
-<br>**STOP!**: Don't touch it. It is very fragile. Keeps your hands off from it!
-<br>Don't even try to fork it or download.
-<br>Have you understand that? Just stay away from this repo, be a good boy/girl.
+<br>Don't touch it. It is very fragile!
+<br>Don't even try to fork or download it.
+<br>Have you understand that?! Keep your hands off from it, ok?
+<br>Just stay away from this repo and you will be ok. Be a good boy/girl.
