@@ -1,15 +1,20 @@
 {
   "compilerOptions": {
-     "module"       : "commonjs"          //  "None", "CommonJS", "AMD", "System", "UMD", "ES6", or "ES2015".
-    ,"importHelpers": true                //  Import helper-function (e.g. __extends, __rest, etc..) from "tslib" (installed separately)
-    ,"target"       : "es5"               //  "ES3" (default), "ES5", "ES6"/"ES2015", "ES2016", "ES2017" or "ESNext".
-    ,"pretty"       : false               //  Stylize errors and messages using color and context
-    ,"sourceMap"    : false
-    ,"inlineSources": false               //  Emit a single file with source maps instead of having a separate file
-    ,"declaration"  : false               //  Generates corresponding .d.ts file
-    ,"noImplicitAny": false               //  Raise error on expressions and declarations with an implied any type.
-    ,"noEmit"       : false               //  Do not emit .js outputs
-    ,"noEmitOnError": true                //  Do not emit .js outputs
+     "module"                 : "commonjs"          // "None", "CommonJS", "AMD", "System", "UMD", "ES6", or "ES2015".
+    ,"importHelpers"          : true                // Import helper-function (e.g. __extends, __rest, etc..) from "tslib" (installed separately)
+    ,"target"                 : "es5"               // "ES3" (default), "ES5", "ES6"/"ES2015", "ES2016", "ES2017" or "ESNext".
+    ,"pretty"                 : false               // Stylize errors and messages using color and context
+    ,"alwaysStrict"           : false               // Parse in strict mode and emit "use strict" for each source file
+    ,"noImplicitUseStrict"    : false               // Do not emit "use strict" directives in module output.
+    ,"sourceMap"              : false
+    ,"inlineSources"          : false               // Emit a single file with source maps instead of having a separate file
+    ,"declaration"            : false               // Generates corresponding .d.ts file
+    ,"noImplicitAny"          : false               // Raise error on expressions and declarations with an implied any type.
+    ,"noEmit"                 : false               // Do not emit .js outputs
+    ,"noEmitOnError"          : true                // Do not emit .js outputs
+  //,"lib"                    : []                  // The default library injected is:
+                                                    // ► For --target ES5: DOM,ES5,ScriptHost
+                                                    // ► For --target ES6: DOM,ES6,DOM.Iterable,ScriptHost
   }
   ,"files"    : ["./typings/index.d.ts"]  // Uncomment when using typings tool and typings/index.d.ts exists
   ,"include"  : ["./src/*"]
