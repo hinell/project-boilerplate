@@ -4,12 +4,22 @@
    "description": "",
    "main"       : "",
    "scripts"    : {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test"  : "echo \"Error: no test specified\" && exit 1"
+   ,"build" : ""
   },
    "dependencies": {
     "tslib"           : ""
     },
+  "devDependencies": {
+    "babel-preset-es2015": "",
+    "babel-cli": "",
+    "webpack": "github:webpack/webpack#master"
+  },
   "keywords"  : [],
   "author"    : "hinell@github.com",
-  "license"   : "MIT"
+  "license"   : "MIT",
+  "babel"     : {
+     "plugins": []
+    ,"presets": ["es2015"]
+  }
 }
