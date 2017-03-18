@@ -13,6 +13,7 @@
   "devDependencies": {
     "babel-preset-es2015": "",
     "babel-cli": "",
+    "lodash"   : "",
     "webpack": "github:webpack/webpack#master"
   },
   "keywords"  : [],
