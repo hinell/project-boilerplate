@@ -23,6 +23,7 @@
     ,"noImplicitThis"	        : false         // Raise error on this expressions with an implied any type.
     ,"noImplicitUseStrict"	  : true          // Do not emit "use strict" directives in module output.
     ,"noEmitOnError"          : true          // Do not emit .js outputs
+    ,"allowUnreachableCode"   : true
   //,"outFile"                : "./index.js"  // Concatenate and emit output to single file. See output file order documentation for more details.
   //,"paths"                  : []            // List of path mapping entries for module names to locations relative to the baseUrl
   //,"typeRoots"              : ["node_modules/@types"] // roots of packages to be included into compilation
@@ -32,7 +33,7 @@
                                               // ► For --target ES5: DOM,ES5,ScriptHost
                                               // ► For --target ES6: DOM,ES6,DOM.Iterable,ScriptHost
   }
-  ,"files"    : ["./typings/index.d.ts"]  // Uncomment when using typings tool and typings/index.d.ts exists
+//,"files"    : []  // Uncomment when using typings tool and typings/index.d.ts exists
   ,"include"  : ["./src/*"]
 //,"exclude"  : []                        //  Default to: "node_modules", "bower_components", "jspm_packages" and <outDir>
 }
