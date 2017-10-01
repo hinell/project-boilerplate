@@ -14,6 +14,7 @@
   //,"rootDir"                : "./"          // Specify the root directory of input files. Use to control the output directory structure with --outDir.
     ,"removeComments"         : false         // Do not emit comments to output.
     ,"noEmit"                 : false         // Do not emit outputs.
+    ,"noEmitOnError"          : true          // Do not emit .js outputs
     ,"importHelpers"          : true          // Import emit helpers from 'tslib'.
     ,"downlevelIteration"     : true          // Provide full support for iterables in 'for-of', spread, and destructuring when targeting 'ES5' or 'ES3'.
     ,"isolatedModules"        : false         // Transpile each file as a separate module (similar to 'ts.transpileModule').
@@ -22,11 +23,11 @@
 
   //,"moduleResolution        : "node"        // Determine how modules get resolved. Either "node" for Node.js/io.js style resolution, or "classic"
     ,"skipLibCheck"           : false         // Skip type checking of all declaration files (*.d.ts).
+    ,"sourceMap"              : true
     ,"inlineSourceMap"        : false         // Emit a single file with source maps instead of having a separate file.
     ,"inlineSources"          : false         // Emit the source alongside the sourcemaps within a single file
     ,"noImplicitReturns"	    : false         // Report error when not all code paths in function return a value.
     ,"noImplicitUseStrict"	  : true          // Do not emit "use strict" directives in module output.
-    ,"noEmitOnError"          : true          // Do not emit .js outputs
     ,"allowUnreachableCode"   : true
 
      // STRICT TYPE-CHECKING OPTIONS
