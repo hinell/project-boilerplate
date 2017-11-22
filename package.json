@@ -5,7 +5,8 @@
    "main"       : "",
    "scripts"    : {
     "test"  : "echo \"Error: no test specified\" && exit 1"
-   ,"build" : ""
+   ,"build" : "tsc --watch false"
+   ,"lint"  : "tslint -p tsconfig.json"
   },
    "dependencies": {
     "tslib"           : ""
@@ -13,15 +14,11 @@
   "devDependencies": {
     "@types/node": "",
     "@types/webpack": "",
-    "babel-preset-es2015": "",
-    "lodash"   : "",
-    "babel-cli": "",
-    "css-loader": "",
-    "fork-ts-checker-webpack-plugin": "",
     "style-loader": "",
     "ts-loader": "",
     "typescript": "",
     "uglifyjs-webpack-plugin": "",
+    "fork-ts-checker-webpack-plugin": "",
     "webpack": ""
   },
   "keywords"  : [],

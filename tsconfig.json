@@ -4,7 +4,7 @@
      // BASIC OPTIONS
      "target"                 : "es5"         // Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', or 'ESNEXT'.
     ,"module"                 : "commonjs"    // Specify module code generation: 'none', commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'.
-    ,"watch"                  : false         // Run the compiler in watch mode. Watch input files and trigger recompilation on changes.
+    ,"watch"                  : true          // Run the compiler in watch mode. Watch input files and trigger recompilation on changes.
     ,"allowJs"                : true          // Allow javascript files to be compiled.
     ,"checkJs"                : true          // Report errors in .js files.
   //,"jsx"                    : "preserve"    // Specify JSX code generation                        : 'preserve', 'react-native', or 'react'.
@@ -23,7 +23,7 @@
 
   //,"moduleResolution        : "node"        // Determine how modules get resolved. Either "node" for Node.js/io.js style resolution, or "classic"
     ,"skipLibCheck"           : false         // Skip type checking of all declaration files (*.d.ts).
-    ,"sourceMap"              : true
+    ,"sourceMap"              : false
     ,"inlineSourceMap"        : false         // Emit a single file with source maps instead of having a separate file.
     ,"inlineSources"          : false         // Emit the source alongside the sourcemaps within a single file
     ,"noImplicitReturns"	    : false         // Report error when not all code paths in function return a value.
@@ -40,7 +40,7 @@
   //,"outFile"                : "./"          // Concatenate and emit output to single file. See output file order documentation for more details.
   //,"paths"                  : []            // List of path mapping entries for module names to locations relative to the baseUrl
   //,"typeRoots"              : ["node_modules/@types"] // roots of packages to be included into compilation
-  //,"lib"                    : []            // for --target ES5: DOM,ES5,ScriptHost
+  ,"lib"                      : ["ES5","DOM","ES6","ES2015","ES2016"] // for --target ES5: DOM,ES5,ScriptHost
                                               // for ES6: DOM,ES6,DOM.Iterable,ScriptHost
   //,"outDir"                 : "./dist"      // Redirect output structure to the directory.
                                               // ► For --target ES5: DOM,ES5,ScriptHost
