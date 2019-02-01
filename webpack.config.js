@@ -1,42 +1,52 @@
 // Config reference:
 //  http://webpack.github.io/docs/configuration.html
 //  https://webpack.js.org/configuration/
+//  webpack version: `4.29.0`
+
 let webpack       = require('webpack');
 let TsProcessFork = require('fork-ts-checker-webpack-plugin')
 let Uglifyjs      = require('uglifyjs-webpack-plugin');
+let join          = require('path').join;
+
 
 const NODE_ENV = process.env.NODE_ENV;
 
-let plugins = NODE_ENV === 'production'
+const production = NODE_ENV === 'production';
+let plugins = production
   ? [new Uglifyjs()]
   : [
-      new webpack.HotModuleReplacementPlugin({title: 'HOT!'})
+      new webpack.HotModuleReplacementPlugin()
     , new TsProcessFork({ watch: ['./src/']  })
     ];
 
-let config = {
-   target   : 'web' // async-node | electron | electron-renderer | node | node-webkit | web | webworker
-  ,externals: {}    // http://webpack.github.io/docs/configuration.html#externals
-  ,entry    : {bundle: './src/index.ts'}
+
+module.exports = {
+   mode     : production ? `production`: `development`
+  ,target   : 'web'
+  ,externals: {}
+  ,entry    : {bundle: './src/client.tsx'}
   ,output   : {
-     path    : '' // absolute path required
+     path    : join(__dirname, '/dist') // absolute path required
     ,filename: '[name].js'
+    ,publicPath: 'dist/'
   }
   ,plugins  : plugins
-  ,devtool  : void 0
+  ,devtool  : "source-map" // https://webpack.js.org/configuration/devtool/#devtool
+  ,resolve: {
+    extensions: ['.ts','.tsx','.jsx','.js', '.json']
+  }
   ,module   : {
     rules: [
       {test: /\.tsx?$/  , use: {loader: 'ts-loader'  , options: { transpileOnly: true }} }
-    , {test: /\.pug$/   , use: ['pug-loader']}
     , {test: /\.css$/   , use: ['style-loader','css-loader']}
     ]
   }
+  // TODO: Replace with webpack-dev-middleware
   ,devServer: {
       port       : 80
     , publicPath : '/public/'
     , hot        : true
     , open       : true
   }
+  , bail: true
 };
-
-module.exports = config;

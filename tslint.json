@@ -2,7 +2,7 @@
 // https://github.com/palantir/tslint/tree/master/src/configs
 {
     "defaultSeverity": "error",
-    "extends": [],
+    "extends": ["tslint:latest"],
     "jsRules": {},
     "rules": {
         // TypeScript Specific
@@ -12,7 +12,7 @@
         "member-ordering": false,
         "no-any": false,
         "no-empty-interface": false,
-        "no-import-side-effect": true,
+        "no-import-side-effect": false,
 
         "no-inferrable-types": [true, "ignore-params"],
         "no-internal-module": true,
@@ -22,29 +22,12 @@
         "no-reference": true,
         "no-this-assignment": [true,{"allow-destructuring": true}],
         // Disallows the use of require statements except in import statements.
-        "no-var-requires": true,
+        "no-var-requires": false,
         "only-arrow-functions": false,
         "promise-function-async": true,
         "typedef": false,
-        "typedef-whitespace": [
-            true,
-            {
-                "call-signature": "nospace",
-                "index-signature": "nospace",
-//                "parameter": "nospace",
-                "property-declaration": "nospace",
-                "variable-declaration": "nospace"
-            },
-            {
-                "call-signature": "onespace",
-                "index-signature": "onespace",
-//                "parameter": "onespace",
-                "property-declaration": "onespace",
-                "variable-declaration": "onespace"
-            }
-        ],
+        "typedef-whitespace": false,
         "unified-signatures": true,
-
         // Functionality
         "await-promise": true,
         // "ban": no sensible default
@@ -66,9 +49,10 @@
         "no-eval": true,
         "no-floating-promises": false,
         "no-for-in-array": true,
-        "no-implicit-dependencies": true,
+        "no-implicit-dependencies": false,
         "no-inferred-empty-object-type": false,
         "no-invalid-template-strings": true,
+
         // "no-invalid-this": Won't this be deprecated?
         "no-misused-new": true,
         "no-null-keyword": true,
@@ -78,7 +62,7 @@
         "no-string-literal": true,
         "no-string-throw": true,
         "no-sparse-arrays": true,
-        "no-submodule-imports": true,
+        "no-submodule-imports": false,
         "no-unbound-method": [ true, "ignore-static"],
         "no-unnecessary-class": false,
         "no-unsafe-any": false,
@@ -86,9 +70,9 @@
         "no-unused-expression": true,
         "no-unused-variable": true,
         "no-use-before-declare": true,
-        "no-var-keyword": true,
+        "no-var-keyword": false,
         "no-void-expression": false,
-        "prefer-conditional-expression": true,
+        "prefer-conditional-expression": false,
         "radix": true,
         "restrict-plus-operands": true,
         "strict-boolean-expressions": false,
@@ -96,28 +80,38 @@
         "switch-default": true,
         "triple-equals": true,
         "use-default-type-parameter": true,
-        "use-isnan": true,
 
+        "use-isnan": true,
         // Maintainability
         "cyclomatic-complexity": false,
-        "eofline": true,
+        "eofline": false,
         "indent": [true, "spaces"],
         "linebreak-style": [true, "CRLF"],
         "max-classes-per-file": [false, 1],
         "max-file-line-count": [true, 1024],
-        "max-line-length": [true, 127],
+        "max-line-length": false,
         "no-default-export": true,
         "no-duplicate-imports": true,
-        "no-irregular-whitespace": true,
+        "no-irregular-whitespace": false,
         "no-mergeable-namespace": true,
         "no-parameter-reassignment": false,
         "no-require-imports": false,
-        "no-trailing-whitespace": false,
         "object-literal-sort-keys": false,
         "prefer-const": true,
-        "trailing-comma": false
+        "trailing-comma": false,
 
-
+        // Style
+        "class-name": true,
+        "comment-format": [true, "check-space"],
+        "interface-name": [ true, "never-prefix"],
+        "one-line": [true, "check-open-brace", "check-whitespace" ],
+        "no-trailing-whitespace": [true, "ignore-template-strings"],
+        "one-variable-per-declaration": false,
+        "semicolon": false,
+        "space-before-function-paren": false,
+        "ordered-imports": false,
+        "no-unused-expression": false,
+        "prefer-for-of": false
     },
     "rulesDirectory": []
 }

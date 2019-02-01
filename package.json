@@ -1,31 +1,30 @@
 {
-   "name"       : "application-name",
-   "version"    : "0.0.1",
-   "description": "",
-   "main"       : "",
-   "scripts"    : {
-    "test"  : "echo \"Error: no test specified\" && exit 1"
-   ,"build" : "tsc --watch false"
-   ,"lint"  : "tslint -p tsconfig.json"
-  },
-   "dependencies": {
-    "tslib"           : ""
-    },
-  "devDependencies": {
-    "@types/node": "",
-    "@types/webpack": "",
-    "style-loader": "",
-    "ts-loader": "",
-    "typescript": "",
-    "uglifyjs-webpack-plugin": "",
-    "fork-ts-checker-webpack-plugin": "",
-    "webpack": ""
-  },
-  "keywords"  : [],
-  "author"    : "hinell@github.com",
-  "license"   : "MIT",
-  "babel"     : {
-     "plugins": []
-    ,"presets": ["es2015"]
-  }
+ "name": "application-name",
+ "version": "0.0.1",
+ "description": "",
+ "main": "",
+ "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "build:c": "webpack --config webpack.config.js",
+  "build:s": "tsc --watch false",
+  "lint": "tslint -p tsconfig.json"
+ },
+ "dependencies": {
+  "tslib": "",
+  "webpack-cli": "^3.2.1"
+ },
+ "devDependencies": {
+  "@types/node": "",
+  "@types/webpack": "",
+  "style-loader": "",
+  "ts-loader": "",
+  "typescript": "",
+  "uglifyjs-webpack-plugin": "",
+  "fork-ts-checker-webpack-plugin": "",
+  "webpack": "",
+  "webpack-cli": ""
+ },
+ "keywords": [],
+ "author": "hinell@github.com",
+ "license": "MIT"
 }
