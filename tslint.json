@@ -28,6 +28,7 @@
         "typedef": false,
         "typedef-whitespace": false,
         "unified-signatures": true,
+
         // Functionality
         "await-promise": true,
         // "ban": no sensible default
@@ -37,7 +38,7 @@
         // "import-blacklist": no sensible default
         "label-position": true,
         "no-arg": true,
-        "no-bitwise": true,
+        "no-bitwise": false,
         "no-conditional-assignment": true,
         "no-console": false,
         "no-construct": true,
@@ -99,6 +100,7 @@
         "object-literal-sort-keys": false,
         "prefer-const": true,
         "trailing-comma": false,
+        "no-consecutive-blank-lines": [true, 3],
 
         // Style
         "class-name": true,
@@ -111,7 +113,11 @@
         "space-before-function-paren": false,
         "ordered-imports": false,
         "no-unused-expression": false,
-        "prefer-for-of": false
+        "prefer-for-of": false,
+        "align": [ "arguments", "elements", "members", "parameters" ],
+
+        // Miscelanious
+        "prefer-object-spread": false
     },
     "rulesDirectory": []
 }

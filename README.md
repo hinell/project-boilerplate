@@ -4,7 +4,8 @@
 [d]: #project
 **[INSTALL][i] | [USAGE][u] | [API][a] | [AUTHOR][auth] | [CONTRIBUTE][cpl] | [LICENSE][cpl] | [SUPPORT][ps]**
 
-> **KISS** - Keep it simple, stupid!
+> **KISS** - Keep it simple, stupid!<br>
+> **DRY** - Don't repeat yourself!
 
 ```
 Quick usage example...
@@ -22,11 +23,12 @@ Description of the problem that your module solves.
 A brief note on environment/machine/tools requisites
 
 ### INSTALLATION
-[i]: #installation 'Installation guide' 
+[i]: #installation 'Installation guide'
 
 ```
 Installation/deployment example
 ```
+> _NOTE:_ In order to make this starting kit work, you have to remove `send` package in the `node_modules/serve-static/node_modules/` folder.
 
 ### USAGE
 [u]: #usage 'Product usage'
@@ -39,7 +41,7 @@ Give more elaborate example here.
 ## API
 [a]: #api 'Module\'s API description'
 
-#### WARNING!:   
+#### WARNING!:
 Api description should be given here.
 ```
 Code examples ...
@@ -73,4 +75,4 @@ You should be aware that this project is supported solely by me and provided as 
 
 Go back to the **[project description][d]**
 
-Copyright © 2017 Davronov Alexander 
+Copyright © 2017 Davronov Alexander

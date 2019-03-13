@@ -1,0 +1,68 @@
+.post-view {
+    display: block;
+    max-width: 60%;
+    margin: auto;
+    /* border: 1px solid transparent; */
+    transition-duration: 1s;
+    position: relative;
+}
+
+.post-view .content {
+    word-spacing: normal;
+    white-space: pre-wrap;
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+.post-view .picture {
+    display: block;
+    height: 300px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.post-view .picture svg {
+    height: 40%;
+    /* width: 100%; */
+    opacity: 0.8;
+}
+
+.post-view .picture svg .cls-1,
+.post-view .picture svg .cls-2,
+.post-view .picture svg .cls-3,
+.post-view .picture svg .cls-4 {
+    fill: #ffffff;
+    stroke: #ffffff;
+
+}
+
+
+.post-view .picture svg .sun,
+.post-view .picture svg .mountain {
+    fill: #ffffff
+}
+.post-view .picture svg .frame {
+    stroke: #ffffff;
+}
+
+
+.post-view .picture.placeholder {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(226, 226, 226);
+}
+
+
+
+.post-view:hover {
+    transform-origin: center bottom;
+    transform: perspecitve(600) rotateX(30deg);
+    box-shadow: 0 0 8px 0px rgba(0,0,0,0.5);
+}
+
+.post-view img {
+    vertical-align: middle;
+    width: 100%;
+    margin: auto;
+}

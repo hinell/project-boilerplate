@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": ["dom", "es2015", "es2016", "es5", "es6", "es2015.collection", ],
+    "sourceMap": true
+  },
+  // "files": [],
+  "include": ["./src/client.tsx"],
+  "exclude": [
+    // "./node_modules/@types/node",
+    "./src/server.tsx",
+  ]
+}

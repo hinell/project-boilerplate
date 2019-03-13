@@ -64,3 +64,5 @@ fabric.properties
 src/**/*.js
 dist/
 
+# TypeScript
+.tsbuildinfo

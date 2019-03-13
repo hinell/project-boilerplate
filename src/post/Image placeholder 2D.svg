@@ -1,0 +1,21 @@
+<svg id="Image_placeholder_2D" data-name="Image placeholder 2D" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 94" width="140" height="94">
+  <defs>
+    <style>
+      .frame {
+        stroke: #000;
+        fill: none;
+        stroke-width: 6pt;
+      }
+      .sun,
+      .mountain {
+        fill: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+    </style>
+  </defs>
+  <title>Image placeholder 2D</title>
+  <rect class="frame" x="3" y="3" width="134" height="88" />
+  <circle class="sun" data-name="&lt;Ellipse&gt;" cx="28.15" cy="22.67" r="13"/>
+  <path class="mountain" d="M12.5,81V61.57L32.73,42.14l8.52,9.71L79.58,13,98.75,32.43,109.4,21.63l18.1,20.51V81H12.5Z"/>
+</svg>

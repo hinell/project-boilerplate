@@ -10,5 +10,5 @@ trim_trailing_whitespace  = true
 charset                   = utf-8
 indent_size               = 2
 
-[{package.json,.travis.yml}]
+[{package.json,.travis.yml,*.env}]
 insert_final_newline      = false

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Development server</title>
+    <meta name="description" content="">
+    <link rel="manifest" href="/public/site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {{scripts}}
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        * {
+            font-family: system-ui, sans-serif
+        }
+        h1, p {
+            text-align: center;
+        }
+    </style>
+    <!--[if IE]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser.</p>
+        <p class="browserupgrade">Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <h1>{{data}}</h1>
+    <h1 id="body-waiting-message">Waiting...</h1>
+</body>
+</html>
