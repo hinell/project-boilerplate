@@ -1,5 +1,6 @@
 import Express from "express"
 import {Express as ExpressI } from "express-serve-static-core";
+import StaticServe from "serve-static"
 import path, { join } from "path";
 import { config } from "dotenv";
 import { expand } from "@emmetio/expand-abbreviation"
@@ -8,6 +9,7 @@ import send from "send";
 import { express as UserAgent } from "express-useragent";
 import "./utils/modules.declaration";
 import faker from "faker";
+import { clientModuleLoadTest } from "./tests/server";
 
 declare const mdd;
 
@@ -95,22 +97,9 @@ const service = Express()
         send(req, join(fsBasePath, `./public/assets.json`), { fs }).pipe(res)
       });
 
-      service.use(`/public`, Express.static(join(fsBasePath, `/public`), { fs, index: false } as any));
+      service.use(`/public`, StaticServe(join(fsBasePath, `/public`), { fs, index: false } as any));
 
-      // TODO: Server fails to load non-js files. Consider to use either css in js or create separate webpack config
-      (async function () {
-        const testingWpModule = `server: testing loading webpack module: `;
-        try {
-          // BUG: Avoid using dynamic imports in server side components
-          // const module = await import(`./foo/foo.css`)
-          const module = require(`./post/view`)
-          console.log(testingWpModule, `module.css`, module.css);
-          console.log(testingWpModule, `module.img`, module.img2);
-        } catch (error) {
-          console.log(testingWpModule, `failure`, error);
-          return
-        }
-      })()
+      // clientModuleLoadTest()
 
 export { service }
 export const host = `localhost`;

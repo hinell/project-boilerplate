@@ -1,7 +1,7 @@
 // Config references: http://webpack.github.io/docs/configuration.html
 //                    https://webpack.js.org/configuration/
 //
-// webpack version  : 4.29.6
+// webpack version  : 4.30.0
 // TODO: Don't need anymore. Consider to return back https://github.com/Realytics/fork-ts-checker-webpack-plugin
 // TODO: Checkout production assets version
 // TODO: Fix webpackSssets
